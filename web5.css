@@ -1,0 +1,339 @@
+*{
+    margin:0;
+    padding: 0;
+} 
+
+body{
+    overflow-x:hidden ;
+}
+
+
+
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr  5fr 4fr 1fr ;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;    
+    position: relative;
+}
+
+nav .logo{
+    margin: 10px 5px 5px 12px;
+    position: relative;
+    top: 5px;
+    left: 30px;
+}
+
+nav .menu .tidak{
+    border-bottom: 1px solid white;
+}
+
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+}
+ul .active ,.tidak{
+    text-decoration: none;
+    list-style: none;
+    margin: 15px;
+    position: relative;
+    top: 5px;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: max-content max-content max-content ;
+    margin: 15px 15px ;
+    gap: 15px;
+    justify-content: flex-end;
+    position: relative;
+    top: 5px;
+    font-size: 14px;
+}
+
+.search .user  {
+    display: flex;
+    justify-content: flex-end   ;
+    position: absolute;
+    right: 0;
+
+
+}
+
+.search .dua{
+    border-bottom: 1px solid white;
+}
+.search .dua ,.satu{
+    position: relative;
+    right: 80px;
+}
+
+
+/* jumbotron */
+.jumbotron{
+background-image: url(design.img/room\ \(1\).jpg);
+height: 1000px;
+background-size: cover;
+background-position: 0 -00px;
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+margin-top: -70px;
+width: 100%;
+}
+
+.hero h1{
+    font-size: 144px;
+    color: white;
+}
+.hero p{
+    font-size: 40px;
+    color: #c37e1e;
+    /* font-family: 'Montserrat', sans-serif;     */
+    
+}
+
+
+footer{
+    display: flex;
+    height: 1px; 
+    background-color: rgba(0, 0, 0, 2);
+    justify-content: flex-end;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.item{
+    margin: 15px;
+    position: relative;
+    bottom: 120px;
+    right: 100px;
+}
+main{
+    padding-top: 60px;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+main h1{
+    font-size: 53px;
+    padding: 20px;
+}
+
+
+
+.content {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    padding: 30px;
+    position: relative;
+    bottom: 50px;
+}
+
+
+
+
+
+.content .row{
+    text-align: center;
+}
+
+
+
+
+
+.royal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.royal .row img{
+    min-width: 300px;
+}
+
+.royal .text{
+    left: 35px;
+    position: relative;
+    margin: 15px;
+}
+
+.royal .text h1, p, h3{
+    margin: 15px;
+}
+
+
+
+
+ .cape{
+display: flex;
+justify-content: center;
+padding: 20px;
+font-size: 28px;
+
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    
+
+}
+
+.bro img{
+    border-radius: 50%;
+    position: relative;
+    margin: 50px;
+    padding-right: 50px;
+}
+
+.cape2{
+    display: grid;
+    grid-template-rows:35px 35px 35px 35px ;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 80px;
+    font-size: 18px;
+    position: relative;
+    top: 90px;
+}
+
+.cape2 h5{
+    position: relative;
+    left: 10px;
+}
+
+
+
+
+/* responsive */
+
+@media screen and (max-width:580px) {
+
+.jumbotron h1, p{
+    transform: scale(0.7);
+
+
+
+}
+
+.item img{
+    transform: scale(0.7);
+    position: relative;
+    top:40px ;
+    left: 30px;
+
+}
+
+    
+    .royal{
+    }
+
+    .cape{
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        left: 23px;
+    }
+
+      nav .logo {
+    position: relative;
+    top: 0;
+    left:0 ;
+
+    }
+    .search, .logo{
+        /* opacity: 0; */
+        transform: scale(0.7);
+        margin: 0;
+    }
+
+    .menu .active, .tidak{
+        transform: scale(0.7);
+        margin: 0 -5px;
+    }
+    .cape2 h5{
+        left: 60px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width:868px){
+
+    .royal{
+        display: grid;
+       grid-template-rows: 1fr max-content;
+       text-align: center;
+       position: relative;
+    }
+
+    .royal .text{
+        width: 100%;
+        right: 300px;
+        position: a;
+    }
+
+  
+
+    .jumbotron{
+        height: 500px;
+        background-position: 0;
+    }
+
+    .user img{
+        right: 0;
+    }
+    .content{
+       display: flex;
+       flex-direction: column;
+    }
+
+    aside{
+        display: grid;
+        width: 100%;
+    }
+    .cape2{
+        top: 0;
+    }
+    
+
+}
+
+
+@media screen and (max-width:1080px){
+    .jumbotron{
+        background-position: 0;
+    }
+
+    .content .row img{
+        transform: scale(0.6) translate(50px);
+        /* margin: -100px 0; */
+        
+    }
+    .content{
+        justify-content: space-evenly;
+        margin: 0 50px 0;
+    }
+}
+
+
+
+
