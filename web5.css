@@ -127,7 +127,13 @@ main h1{
     padding: 20px;
 }
 
+.container{
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
 
+}
 
 .content {
     display: flex;
@@ -136,6 +142,10 @@ main h1{
     padding: 30px;
     position: relative;
     bottom: 50px;
+    width: 100%;
+    gap: 5px;
+    background-size: cover;
+    /* border: 2px solid black; */
 }
 
 
@@ -143,9 +153,17 @@ main h1{
 
 
 .content .row{
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid black; */
+    background-size: cover;
 }
 
+.content .row .row-revers .col{
+    padding: 0;
+}
 
 
 
@@ -160,6 +178,7 @@ main h1{
 
 .royal .row img{
     min-width: 300px;
+    justify-content: center;
 }
 
 .royal .text{
@@ -237,9 +256,7 @@ aside{
 }
 
     
-    .royal{
-    }
-
+ 
     .cape{
         text-align: center;
         justify-content: center;
@@ -319,10 +336,71 @@ aside{
 
 
 @media screen and (max-width:1080px){
+
+    .cape{
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        left: 23px;
+    }
+
+      nav .logo {
+    position: relative;
+    top: 0;
+    left:0 ;
+
+    }
+
+    .search, .logo{
+        /* opacity: 0; */
+        transform: scale(0.7);
+        margin: 0;
+    }
+
+    .menu .active, .tidak{
+        transform: scale(0.7);
+        margin: 0 -5px;
+    }
+    .cape2 h5{
+        left: 60px;
+    }
+
+    .item img{
+        transform: scale(0.7);
+        position: relative;
+        top:40px ;
+        left: 30px;
+    
+    }
+
+    .jumbotron h1, p{
+        transform: scale(0.7);
+    
+    
+    
+    }
     .jumbotron{
         background-position: 0;
     }
 
+
+    .container{
+        /* display: flex; */
+        /* justify-content: center; */
+        /* width: 100%; */
+    }
+
+    .content .row .row-revers .col{
+    margin: -80px;
+
+
+    }
+    .content .row{
+        /* width: 70%; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .content .row img{
         transform: scale(0.6) translate(50px);
         /* margin: -100px 0; */
