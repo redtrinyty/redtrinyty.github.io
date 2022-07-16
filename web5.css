@@ -5,6 +5,7 @@
 
 body{
     overflow-x:hidden ;
+    position: relative;
 }
 
 
@@ -153,18 +154,33 @@ main h1{
 
 
 .content .row{
-    /* text-align: center; */
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* border: 2px solid black; */
     background-size: cover;
+    position: relative;
 }
 
 .content .row .row-revers .col{
-    padding: 0;
+    position: relative;
+    /* left: 22px; */
 }
 
+.row-revers{
+transition: all 0.8s;
+
+}
+
+.row-revers:hover{
+transform: translatey(30px);
+box-shadow: 8px 10px 22px black;
+background-color: rgb(244, 236, 236);
+}
+.row-revers img {
+    transform: scale(0.93);
+}
 
 
 
@@ -336,6 +352,22 @@ aside{
 
 
 @media screen and (max-width:1080px){
+    .row .row-revers{
+        display:grid;
+        justify-content: center;
+        
+    }
+
+.row-revers .col {
+    left: 22px;
+}
+
+
+    main{
+        transform: scale(0.97);
+        position: relative;
+        left: 30px;
+    }
 
     .cape{
         text-align: center;
